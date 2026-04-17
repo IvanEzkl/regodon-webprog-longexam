@@ -1,25 +1,32 @@
 import Button from '../../components/Button';
-import logo from '../../assets/img/nubdexchange_logo.png';
+import banner from '../../assets/img/banner-nu-manila.webp';
+import products from '../../assets/product-content.js';
+
 
 const AboutPage = () => {
   return (
     <div className="flex w-full flex-col gap-6">
-      <section className="border-y-2 border-zinc-900 bg-zinc-50 px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
+      <section className="section-shell">
         <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
-          <div className="rounded-3xl border-2 border-dashed border-zinc-300 bg-zinc-100 p-6">
-            <div className="flex min-h-72 items-center justify-center rounded-[1.25rem] bg-zinc-200">
-              <img src={logo} alt="BulldogEx" className="h-32 w-32 rounded-full border-2 border-zinc-900 bg-zinc-50 object-contain" />
+          <div className="rounded-3xl border-2 border-dashed border-[#7AAACE] bg-white/65 p-6">
+            <div className="relative min-h-142 overflow-hidden rounded-[1.25rem] bg-[#9CD5FF]/30">
+              <img
+                src={banner}
+                alt="National University Manila campus"
+                className="absolute inset-0 h-full w-full object-cover object-center"
+              />
+              <div className="absolute inset-0 bg-[#355872]/30" />
             </div>
           </div>
 
           <div>
-            <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.28em] text-zinc-500">
+            <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.28em] text-[#7AAACE]">
               About Store
             </p>
-            <h1 className="max-w-xl text-3xl font-bold leading-tight text-zinc-900 sm:text-4xl">
+            <h1 className="max-w-xl text-3xl font-bold leading-tight text-[#355872] sm:text-4xl">
               A campus shop focused on useful products and simple ordering.
             </h1>
-            <p className="mt-4 max-w-lg text-sm leading-7 text-zinc-600 sm:text-base">
+            <p className="mt-4 max-w-lg text-sm leading-7 text-[#355872]/85 sm:text-base">
               BulldogEx Shop keeps the low-fidelity layout system while presenting clear
               product categories, quick actions, and straightforward store information.
             </p>
@@ -33,92 +40,105 @@ const AboutPage = () => {
         </div>
       </section>
 
-      <section className="border-y-2 border-zinc-900 bg-zinc-50 px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
-        <div className="mb-6">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-zinc-500">
+      <section className="section-shell">
+        <div className="mb-7">
+          <p className="micro-label">
             Store Overview
           </p>
-          <h2 className="mt-2 text-2xl font-semibold text-zinc-900">Quick store blocks</h2>
+          <h2 className="mt-2 font-serif text-3xl leading-tight text-[#355872] sm:text-4xl">What we offer</h2>
         </div>
 
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          <div className="rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-5">
-            <p className="text-2xl font-bold text-zinc-900">08</p>
-            <p className="mt-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-zinc-500">
-              Items
+          <div className="surface-card min-h-36 p-4 sm:p-5">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.26em] text-[#7AAACE]">
+              Product Line
+            </p>
+            <p className="mt-3 text-4xl font-bold leading-none text-[#355872]">16</p>
+            <p className="mt-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-[#355872]/70">
+              Available Items
             </p>
           </div>
-          <div className="rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-5">
-            <p className="text-2xl font-bold text-zinc-900">06</p>
-            <p className="mt-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-zinc-500">
+          <div className="surface-card min-h-36 p-4 sm:p-5">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.26em] text-[#7AAACE]">
+              Catalog Mix
+            </p>
+            <p className="mt-3 text-4xl font-bold leading-none text-[#355872]">04</p>
+            <p className="mt-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-[#355872]/70">
               Categories
             </p>
           </div>
-          <div className="rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-5">
-            <p className="text-2xl font-bold text-zinc-900">03</p>
-            <p className="mt-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-zinc-500">
-              Pickup Slots
+          <div className="surface-card min-h-36 p-4 sm:p-5">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.26em] text-[#7AAACE]">
+              Availability
+            </p>
+            <p className="mt-3 text-4xl font-bold leading-none text-[#355872]">Flexible</p>
+            <p className="mt-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-[#355872]/70">
+              In Stock &amp; Preorder
             </p>
           </div>
-          <div className="rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-5">
-            <p className="text-2xl font-bold text-zinc-900">24</p>
-            <p className="mt-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-zinc-500">
-              Orders
+          <div className="surface-card min-h-36 p-4 sm:p-5">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.26em] text-[#7AAACE]">
+              Target Users
+            </p>
+            <p className="mt-3 text-4xl font-bold leading-none text-[#355872]">NU</p>
+            <p className="mt-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-[#355872]/70">
+              Students
             </p>
           </div>
         </div>
       </section>
 
-      <section className="border-y-2 border-zinc-900 bg-zinc-50 px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
-        <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
-          <div>
-            <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-zinc-500">
-              Store Flow
-            </p>
-            <h2 className="mt-2 text-2xl font-semibold text-zinc-900">Stacked shopping wireframe</h2>
+      <section className="section-shell">
+        <div>
+          <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[#7AAACE]">
+            Store Flow
+          </p>
+          <h2 className="mt-2 font-serif text-3xl leading-tight text-[#355872] sm:text-4xl">How it works</h2>
 
-            <div className="mt-6 space-y-4">
-              <article className="rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-5">
-                <h3 className="text-lg font-semibold text-zinc-900">Curated Catalog</h3>
-                <p className="mt-3 text-sm leading-6 text-zinc-600">
-                  Products are grouped by daily need so shoppers can scan faster.
-                </p>
-              </article>
+          <div className="mt-6 grid gap-4 lg:grid-cols-3">
+            <article className="surface-card p-4 sm:p-5">
+              <h3 className="font-serif text-3xl leading-none text-[#355872]">Browse by Category</h3>
+              <p className="mt-3 text-sm leading-7 text-[#355872]/80">
+                Quickly explore uniforms, books, and merchandise organized for easy navigation.
+              </p>
+            </article>
 
-              <article className="rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-5">
-                <h3 className="text-lg font-semibold text-zinc-900">Simple Checkout</h3>
-                <p className="mt-3 text-sm leading-6 text-zinc-600">
-                  Product pages keep price, stock, and action buttons easy to find.
-                </p>
-              </article>
+            <article className="surface-card p-4 sm:p-5">
+              <h3 className="font-serif text-3xl leading-none text-[#355872]">Select Your Items</h3>
+              <p className="mt-3 text-sm leading-7 text-[#355872]/80">
+                View product details, pricing, and availability before placing your order.
+              </p>
+            </article>
 
-              <article className="rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-5">
-                <h3 className="text-lg font-semibold text-zinc-900">Pickup Ready</h3>
-                <p className="mt-3 text-sm leading-6 text-zinc-600">
-                  Store information stays direct for students who need quick order updates.
-                </p>
-              </article>
-            </div>
+            <article className="surface-card p-4 sm:p-5">
+              <h3 className="font-serif text-3xl leading-none text-[#355872]">Order &amp; Pickup</h3>
+              <p className="mt-3 text-sm leading-7 text-[#355872]/80">
+                Place your order online and wait for updates on when your items are ready.
+              </p>
+            </article>
           </div>
 
-          <div className="rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-5">
-            <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-zinc-500">
+          <div className="mt-10 surface-card p-4 sm:p-5">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[#7AAACE]">
               Category Grid
             </p>
-            <div className="mt-5 grid gap-4 sm:grid-cols-2">
-              <div className="flex aspect-square items-center justify-center rounded-[1.25rem] bg-zinc-200">
-                <div className="h-12 w-12 border-2 border-zinc-300 bg-zinc-100" />
+            <h3 className="mt-2 font-serif text-3xl leading-tight text-[#355872]">Shop categories</h3>
+
+            <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+              <div className="flex aspect-square items-center justify-center overflow-hidden rounded-2xl bg-[#9CD5FF]/30">
+                <img src={products[11].image} alt="Shop Category One" className="h-full w-full object-cover" />
               </div>
-              <div className="flex aspect-square items-center justify-center rounded-[1.25rem] bg-zinc-200">
-                <div className="h-12 w-12 border-2 border-zinc-300 bg-zinc-100" />
+              <div className="flex aspect-square items-center justify-center overflow-hidden rounded-2xl bg-[#9CD5FF]/30">
+                <img src={products[8].image} alt="Shop Category Two" className="h-full w-full object-cover" />
               </div>
-              <div className="flex aspect-square items-center justify-center rounded-[1.25rem] bg-zinc-200">
-                <div className="h-12 w-12 border-2 border-zinc-300 bg-zinc-100" />
+              <div className="flex aspect-square items-center justify-center overflow-hidden rounded-2xl bg-[#9CD5FF]/30">
+                <img src={products[0].image} alt="Shop Category Three" className="h-full w-full object-cover" />
               </div>
-              <div className="flex aspect-square items-center justify-center rounded-[1.25rem] bg-zinc-200">
-                <div className="h-12 w-12 border-2 border-zinc-300 bg-zinc-100" />
+              <div className="flex aspect-square items-center justify-center overflow-hidden rounded-2xl bg-[#9CD5FF]/30">
+                <img src={products[3].image} alt="Shop Category Four" className="h-full w-full object-cover" />
               </div>
             </div>
+
             <Button to="/products" className="mt-5">View Products</Button>
           </div>
         </div>

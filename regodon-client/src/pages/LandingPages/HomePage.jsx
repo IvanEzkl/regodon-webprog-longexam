@@ -1,26 +1,27 @@
 import Button from '../../components/Button';
-import banner from '../../assets/img/nu_bulldogex_banner.jpg';
+import banner from '../../assets/img/nu-banner.jpg';
+import products from '../../assets/product-content.js';
 
 const HomePage = () => {
     return (
         <div className="flex w-full flex-col gap-6">
-            <section className="relative min-h-[28rem] overflow-hidden border-y-2 border-zinc-900 bg-zinc-900 px-4 py-10 sm:px-6 lg:px-8">
+            <section className="relative min-h-[20rem] overflow-hidden border-b-2 border-[#355872] bg-[#355872] px-4 py-10 sm:min-h-[23rem] sm:px-6 lg:px-8">
                 <img
                     src={banner}
                     alt=""
-                    className="absolute inset-0 h-full w-full object-cover"
+                    className="absolute inset-0 h-full w-full object-cover object-center"
                 />
-                <div className="absolute inset-0 bg-zinc-900/45" />
+                <div className="absolute inset-0 bg-[#355872]/55" />
 
                 <div className="relative z-10 flex min-h-[22rem] items-start justify-end text-right sm:min-h-[24rem]">
                     <div className="max-w-xl">
-                        <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.28em] text-zinc-200">
+                        <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.28em] text-[#9CD5FF]">
                             Campus Marketplace
                         </p>
-                        <h1 className="text-3xl font-bold leading-tight text-zinc-50 sm:text-4xl">
-                            Welcome to BulldogEx Shop
+                        <h1 className="text-3xl font-bold leading-tight text-[#F7F8F0] sm:text-4xl">
+                            Welcome to BulldogExchange Shop
                         </h1>
-                        <p className="mt-4 text-sm leading-7 text-zinc-100 sm:text-base">
+                        <p className="mt-4 text-sm leading-7 text-[#F7F8F0]/95 sm:text-base">
                             Explore campus uniforms, student essentials, and school merch in one
                             quick storefront.
                         </p>
@@ -36,82 +37,85 @@ const HomePage = () => {
                 </div>
             </section>
 
-            <section className="border-y-2 border-zinc-900 bg-zinc-50 px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
-                <div className="mb-6">
-                    <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-zinc-500">
+            <section className="section-shell">
+                <div className="mb-7">
+                    <p className="micro-label">
                         Store Overview
                     </p>
-                    <h2 className="mt-2 text-2xl font-semibold text-zinc-900">Quick shopping blocks</h2>
+                    <h2 className="mt-2 font-serif text-3xl leading-tight text-[#355872] sm:text-4xl">Quick shopping blocks</h2>
                 </div>
 
                 <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-                    <div className="rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-5">
-                        <p className="text-2xl font-bold text-zinc-900">08</p>
-                        <p className="mt-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-zinc-500">
+                    <div className="surface-card min-h-36 p-4 sm:p-5">
+                        <p className="text-[11px] font-semibold uppercase tracking-[0.26em] text-[#7AAACE]">
+                            Live Catalog
+                        </p>
+                        <p className="mt-3 text-4xl font-bold leading-none text-[#355872]">16</p>
+                        <p className="mt-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-[#355872]/70">
                             Products
                         </p>
                     </div>
-                    <div className="rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-5">
-                        <p className="text-2xl font-bold text-zinc-900">06</p>
-                        <p className="mt-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-zinc-500">
+                    <div className="surface-card min-h-36 p-4 sm:p-5">
+                        <p className="text-[11px] font-semibold uppercase tracking-[0.26em] text-[#7AAACE]">
+                            Easy Navigation
+                        </p>
+                        <p className="mt-3 text-4xl font-bold leading-none text-[#355872]">03</p>
+                        <p className="mt-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-[#355872]/70">
                             Categories
                         </p>
                     </div>
-                    <div className="rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-5">
-                        <p className="text-2xl font-bold text-zinc-900">24</p>
-                        <p className="mt-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-zinc-500">
-                            Orders
+                    <div className="surface-card min-h-36 p-4 sm:p-5">
+                        <p className="text-[11px] font-semibold uppercase tracking-[0.26em] text-[#7AAACE]">
+                            Flexible Fulfillment
                         </p>
-                    </div>
-                    <div className="rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-5">
-                        <p className="text-2xl font-bold text-zinc-900">03</p>
-                        <p className="mt-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-zinc-500">
+                        <p className="mt-3 text-4xl font-bold leading-none text-[#355872]">28</p>
+                        <p className="mt-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-[#355872]/70">
                             Pickup Slots
                         </p>
                     </div>
                 </div>
             </section>
 
-            <section className="border-y-2 border-zinc-900 bg-zinc-50 px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
-                <div className="mb-6">
-                    <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-zinc-500">
+            <section className="section-shell">
+                <div className="mb-7">
+                    <p className="micro-label">
                         Shop Sections
                     </p>
-                    <h2 className="mt-2 text-2xl font-semibold text-zinc-900">Simple store cards</h2>
+                    <h2 className="mt-2 font-serif text-3xl leading-tight text-[#355872] sm:text-4xl">Product categories</h2>
                 </div>
 
                 <div className="grid gap-4 md:grid-cols-3">
-                    <article className="rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-4">
-                        <div className="flex aspect-4/3 items-center justify-center rounded-[1.25rem] bg-zinc-200">
-                            <div className="h-12 w-12 border-2 border-zinc-300 bg-zinc-100" />
+                    <article className="surface-card flex h-full flex-col p-3 sm:p-4">
+                        <div className="flex aspect-[5/4] items-center justify-center overflow-hidden rounded-2xl bg-[#9CD5FF]/30">
+                            <img src={products[2].image} alt="Daily Essentials" className="h-full w-full object-cover" />
                         </div>
-                        <h3 className="mt-4 text-lg font-semibold text-zinc-900">Daily Essentials</h3>
-                        <p className="mt-3 text-sm leading-6 text-zinc-600">
-                            Bags, tumblers, lanyards, and items used every school day.
+                        <h3 className="mt-4 font-serif text-3xl leading-none text-[#355872]">Uniforms</h3>
+                        <p className="mt-3 text-sm leading-7 text-[#355872]/80">
+                            Medtech, tourism, and traditional uniforms for school requirements.
                         </p>
-                        <Button to="/products" className="mt-4" variant="primary">View Products</Button>
+                        <Button to="/products" className="mt-5" variant="primary">View Products</Button>
                     </article>
 
-                    <article className="rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-4">
-                        <div className="flex aspect-4/3 items-center justify-center rounded-[1.25rem] bg-zinc-200">
-                            <div className="h-12 w-12 border-2 border-zinc-300 bg-zinc-100" />
+                    <article className="surface-card flex h-full flex-col p-3 sm:p-4">
+                        <div className="flex aspect-[5/4] items-center justify-center overflow-hidden rounded-2xl bg-[#9CD5FF]/30">
+                            <img src={products[4].image} alt="Study Supplies" className="h-full w-full object-cover" />
                         </div>
-                        <h3 className="mt-4 text-lg font-semibold text-zinc-900">Study Supplies</h3>
-                        <p className="mt-3 text-sm leading-6 text-zinc-600">
-                            Notes, desk tools, and study kits for class and review weeks.
+                        <h3 className="mt-4 font-serif text-3xl leading-none text-[#355872]">Medical Books</h3>
+                        <p className="mt-3 text-sm leading-7 text-[#355872]/80">
+                            RLE manuals and medical study references for coursework and reviews.
                         </p>
-                        <Button to="/products" className="mt-4" variant="primary">Shop Supplies</Button>
+                        <Button to="/products" className="mt-5" variant="primary">Shop Supplies</Button>
                     </article>
 
-                    <article className="rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-4">
-                        <div className="flex aspect-4/3 items-center justify-center rounded-[1.25rem] bg-zinc-200">
-                            <div className="h-12 w-12 border-2 border-zinc-300 bg-zinc-100" />
+                    <article className="surface-card flex h-full flex-col p-3 sm:p-4">
+                        <div className="flex aspect-[5/4] items-center justify-center overflow-hidden rounded-2xl bg-[#9CD5FF]/30">
+                            <img src={products[12].image} alt="Campus Apparel" className="h-full w-full object-cover" />
                         </div>
-                        <h3 className="mt-4 text-lg font-semibold text-zinc-900">Campus Apparel</h3>
-                        <p className="mt-3 text-sm leading-6 text-zinc-600">
-                            Comfortable pieces for class days, commute days, and weekends.
+                        <h3 className="mt-4 font-serif text-3xl leading-none text-[#355872]">NU Merch</h3>
+                        <p className="mt-3 text-sm leading-7 text-[#355872]/80">
+                            Bag tags, caps, and lanyards designed for everyday Nationalian use.
                         </p>
-                        <Button to="/products" className="mt-4" variant="primary">
+                        <Button to="/products" className="mt-5" variant="primary">
                             View Apparel
                         </Button>
                     </article>

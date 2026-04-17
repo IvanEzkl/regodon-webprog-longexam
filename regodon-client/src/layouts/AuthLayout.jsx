@@ -1,22 +1,20 @@
 import { Outlet } from 'react-router-dom';
+import heroBackground from '../assets/img/hero.jpg';
 
 const AuthLayout = () => {
   return (
-    <section className="min-h-screen bg-zinc-100 text-zinc-900">
-      <div className="grid min-h-screen w-full lg:grid-cols-[1fr_0.95fr]">
-        <div className="flex items-center justify-center border-b-2 border-zinc-300 bg-zinc-200 p-8 sm:p-10 lg:border-b-0 lg:border-r-2 lg:border-zinc-300 lg:p-16">
-          <div className="flex w-full max-w-md items-center justify-center rounded-4xl border-2 border-dashed border-zinc-300 bg-zinc-100/60 p-8 sm:p-10">
-            <div className="relative aspect-square w-full max-w-[18rem] border-10 border-zinc-50/90">
-              <span className="absolute left-1/2 top-0 h-full w-2 -translate-x-1/2 rotate-45 bg-zinc-50/90" />
-              <span className="absolute left-1/2 top-0 h-full w-2 -translate-x-1/2 -rotate-45 bg-zinc-50/90" />
-            </div>
-          </div>
-        </div>
+    <section className="relative min-h-screen overflow-hidden bg-[#355872] text-[#355872]">
+      <img
+        src={heroBackground}
+        alt=""
+        className="absolute inset-0 h-full w-full object-cover object-center"
+        aria-hidden="true"
+      />
+      <div className="absolute inset-0 bg-[#355872]/55" />
 
-        <main className="flex items-center bg-zinc-50 px-6 py-10 sm:px-10 lg:px-16">
-          <div className="mx-auto w-full max-w-md">
-            <Outlet />
-          </div>
+      <div className="relative z-10 flex min-h-screen w-full items-center justify-center px-6 py-10 sm:px-10 lg:px-16">
+        <main className="w-full max-w-xl rounded-3xl border border-[#7AAACE]/60 bg-[#F7F8F0]/96 p-6 shadow-[0_14px_40px_rgba(28,49,66,0.28)] backdrop-blur-[2px] sm:p-8">
+          <Outlet />
         </main>
       </div>
     </section>

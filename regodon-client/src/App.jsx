@@ -53,6 +53,10 @@ const routes = [
       }
     ],
   },
+  {
+    path: '*',
+    element: <NotFoundPage />,
+  },
 ];
 
 const router = createBrowserRouter(routes);
