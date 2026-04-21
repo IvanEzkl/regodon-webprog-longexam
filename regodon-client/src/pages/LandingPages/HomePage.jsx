@@ -45,8 +45,8 @@ const HomePage = () => {
                     <h2 className="mt-2 font-serif text-3xl leading-tight text-[#355872] sm:text-4xl">Quick shopping blocks</h2>
                 </div>
 
-                <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-                    <div className="surface-card min-h-36 p-4 sm:p-5">
+                <div className="mx-auto grid w-full max-w-8x3 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                    <div className="surface-card min-h-37 p-10 sm:p-5">
                         <p className="text-[11px] font-semibold uppercase tracking-[0.26em] text-[#7AAACE]">
                             Live Catalog
                         </p>
